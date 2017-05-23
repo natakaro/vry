@@ -1,0 +1,22 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-SimplexNoise.dll"
+/IGNORE:4221
+/NODEFAULTLIB:"LIBCMT"
+/NODEFAULTLIB:"LIBCPMT"
+/NODEFAULTLIB:"LIBCMTD"
+/NODEFAULTLIB:"LIBCPMTD"
+/NODEFAULTLIB:"MSVCRTD"
+/NODEFAULTLIB:"MSVCPRTD"
+/NODEFAULTLIB:"LIBC"
+/NODEFAULTLIB:"LIBCP"
+/NODEFAULTLIB:"LIBCD"
+/NODEFAULTLIB:"LIBCPD"
+"C:\Users\Meds\Desktop\IngameTerrainEditor--master\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\Module.SimplexNoise.cpp.obj"
+"C:\Users\Meds\Desktop\IngameTerrainEditor--master\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\SimplexNoise.generated.cpp.obj"
+"D:\programy\Epic Games\UE_4.15\Engine\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\PCLaunch.rc.res"
+"D:\programy\Epic Games\UE_4.15\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"C:\Users\Meds\Desktop\IngameTerrainEditor--master\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-SimplexNoise.lib"
