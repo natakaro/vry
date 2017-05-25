@@ -369,7 +369,8 @@ void ATerrainGenerator::CopyLandscapeHeightBelow(FVector &Coordinates, FVector& 
 	FVector Start = Coordinates + GetActorLocation();
 	FVector End = Start - FVector(0.f, 0.f, LineTraceLength);
 	
-	GetWorld()->LineTraceSingleByChannel(OUT Hit, Start, End, ECollisionChannel::ECC_WorldStatic);
+	GetWorld()->LineTraceSingleByObjectType(OUT Hit, Start, End, ECC_Vehicle);
+	//GetWorld()->LineTraceSingleByChannel(OUT Hit, Start, End, ECollisionChannel::ECC_GameTraceChannel2);
 
 	float LineTraceHeight = Hit.Location.Z - GetActorLocation().Z + LineTraceHeightOffset;
 	Coordinates = FVector(Coordinates.X, Coordinates.Y, LineTraceHeight);

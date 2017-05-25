@@ -172,11 +172,13 @@ void ATerrainSection::SetVisibility()
 	float DistanceToPawn = (DistanceX > DistanceY) ? DistanceX : DistanceY;
 
 	//check if it should be visible
+	
 	bool bIsVisibleLOD0 = (DistanceToPawn < OwningTerrain->VisibilityLOD0) ? true : false;
 	bool bIsVisibleLOD1 = (DistanceToPawn > OwningTerrain->VisibilityLOD0 && DistanceToPawn < OwningTerrain->VisibilityLOD1) ? true : false;
 	bool bIsVisibleLOD2 = (DistanceToPawn > OwningTerrain->VisibilityLOD1 && DistanceToPawn < OwningTerrain->VisibilityLOD2) ? true : false;
 	bool bIsVisibleLOD3 = (DistanceToPawn > OwningTerrain->VisibilityLOD2 && DistanceToPawn < OwningTerrain->VisibilityLOD3) ? true : false;
 	bool bIsVisibleLOD4 = (DistanceToPawn > OwningTerrain->VisibilityLOD3 && DistanceToPawn < OwningTerrain->VisibilityLOD4) ? true : false;
+	
 
 	//Set visibility
 	if (bUseRuntimeMeshComponent)
@@ -195,6 +197,7 @@ void ATerrainSection::SetVisibility()
 		ProceduralMeshComponentLOD3->SetVisibility(bIsVisibleLOD3);
 		ProceduralMeshComponentLOD4->SetVisibility(bIsVisibleLOD4);
 	}
+	
 }
 
 

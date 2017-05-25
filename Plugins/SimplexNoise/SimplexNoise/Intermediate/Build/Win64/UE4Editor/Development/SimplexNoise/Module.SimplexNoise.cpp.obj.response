@@ -23,11 +23,11 @@
 /wd4838
 /w44668
 /I "D:\programy\Epic Games\UE_4.15\Engine\Source"
-/I C:\Users\Meds\Desktop\IngameTerrainEditor--master\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise\Private
-/I C:\Users\Meds\Desktop\IngameTerrainEditor--master\Plugins\SimplexNoise\SimplexNoise\Source
-/I C:\Users\Meds\Desktop\IngameTerrainEditor--master\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise\Public
-/I C:\Users\Meds\Desktop\IngameTerrainEditor--master\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Inc\SimplexNoise
-/I C:\Users\Meds\Desktop\IngameTerrainEditor--master\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise
+/I C:\Users\Meds\Desktop\IngameTerrainEditor--master\vry\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise\Private
+/I C:\Users\Meds\Desktop\IngameTerrainEditor--master\vry\Plugins\SimplexNoise\SimplexNoise\Source
+/I C:\Users\Meds\Desktop\IngameTerrainEditor--master\vry\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise\Public
+/I C:\Users\Meds\Desktop\IngameTerrainEditor--master\vry\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Inc\SimplexNoise
+/I C:\Users\Meds\Desktop\IngameTerrainEditor--master\vry\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise
 /I "D:\programy\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public"
 /I "D:\programy\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "D:\programy\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Async"
@@ -422,8 +422,8 @@
 /DMESHUTILITIES_API=
 /DKISMET_API=DLLIMPORT
 /DNETWORKREPLAYSTREAMING_API=
-"C:\Users\Meds\Desktop\IngameTerrainEditor--master\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\Module.SimplexNoise.cpp"
-/Fo"C:\Users\Meds\Desktop\IngameTerrainEditor--master\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\Module.SimplexNoise.cpp.obj"
+"C:\Users\Meds\Desktop\IngameTerrainEditor--master\vry\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\Module.SimplexNoise.cpp"
+/Fo"C:\Users\Meds\Desktop\IngameTerrainEditor--master\vry\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\Module.SimplexNoise.cpp.obj"
 /TP
 /GR-
 /W4
