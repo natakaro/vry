@@ -180,7 +180,7 @@ void ATerrainSection::SetVisibility()
 	bool bIsVisibleLOD4 = (DistanceToPawn > OwningTerrain->VisibilityLOD3 && DistanceToPawn < OwningTerrain->VisibilityLOD4) ? true : false;
 	
 
-	//Set visibility
+	////Set visibility
 	if (bUseRuntimeMeshComponent)
 	{
 		RuntimeMeshComponent->SetVisibility(bIsVisibleLOD0);
