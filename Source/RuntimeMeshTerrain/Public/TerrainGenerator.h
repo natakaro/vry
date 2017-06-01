@@ -202,6 +202,8 @@ private:
 
 	void VertexChangeHeight(int32 VertexIndex, float DistanceFraction, const FSculptSettings& Settings);
 
+	void VertexGrab(int32 VertexIndex, float DistanceFraction, const FSculptSettings& Settings, const FSculptInputInfo& InputInfo);
+
 	void VertexAddNoise(int32 VertexIndex, float DistanceFraction, const FSculptSettings& Settings);
 
 	void VertexPaint(int32 VertexIndex, float DistanceFraction, const FSculptSettings& Settings);

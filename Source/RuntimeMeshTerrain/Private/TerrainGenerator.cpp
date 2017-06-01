@@ -518,6 +518,10 @@ void ATerrainGenerator::ModifyTerrain(int32 SectionIndex, const FSculptSettings&
 				case ESculptMode::ST_Smooth:
 					VertexSmooth(CurrentIndex, DistanceFraction, Settings);
 					break;
+
+				case ESculptMode::ST_Grab:
+					VertexGrab(CurrentIndex, DistanceFraction, Settings, InputInfo);
+					break;
 				}
 			}
 
@@ -803,6 +807,16 @@ void ATerrainGenerator::VertexChangeHeight(int32 VertexIndex, float DistanceFrac
 	GlobalVertexData[VertexIndex].Vertices += (Settings.bInvertToolDirection) ? (FVector(0.f, 0.f, -ZValue)) : (FVector(0.f, 0.f, ZValue));
 }
 
+void ATerrainGenerator::VertexGrab(int32 VertexIndex, float DistanceFraction, const FSculptSettings& Settings, const FSculptInputInfo& InputInfo)
+{
+	float FirstZ = GlobalVertexData[VertexIndex].Vertices.Z;
+
+	//float ScaledZStrength = MaxZValueOffsetPerUpdate * Settings.ToolStrength;
+	float Alpha = Curve->GetFloatValue(DistanceFraction) * Settings.Falloff;
+	float ZValue = FMath::Lerp(InputInfo.HandLocation.Z, FirstZ, Alpha);
+
+	GlobalVertexData[VertexIndex].Vertices.Z = ZValue;
+}
 
 void ATerrainGenerator::VertexFlatten(int32 VertexIndex, float DistanceFraction, const FSculptSettings& Settings, const FSculptInputInfo& InputInfo)
 {

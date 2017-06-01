@@ -12,10 +12,11 @@ USculptComponent::USculptComponent()
 }
 
 
-void USculptComponent::SculptStart()
+void USculptComponent::SculptStart(FVector HandLocation)
 {
 	InputInfo.SculptInput = ESculptInput::ST_Started;
 	InputInfo.StartLocation = HitResultOwner.Location;
+	InputInfo.HandLocation = HandLocation;
 	GetWorld()->GetTimerManager().SetTimer(SculptTimerHandle, this, &USculptComponent::Sculpt, GetWorld()->DeltaTimeSeconds, true);
 }
 

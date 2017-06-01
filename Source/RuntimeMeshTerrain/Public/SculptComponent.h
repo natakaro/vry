@@ -18,7 +18,7 @@ public:
 
 	// starts sculpting action till it gets stopped by "SculptStop"
 	UFUNCTION(BlueprintCallable, Category = "Sculpting")
-	void SculptStart();
+	void SculptStart(FVector HandLocation);
 
 	// Stops sculpting action
 	UFUNCTION(BlueprintCallable, Category = "Sculpting")

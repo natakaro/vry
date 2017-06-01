@@ -36,6 +36,7 @@ enum class ESculptMode : uint8
 	ST_Smooth		UMETA(DisplayName = "Smooth"),
 	ST_Noise		UMETA(DisplayName = "Noise"),
 	ST_Paint		UMETA(DisplayName = "Paint"),
+	ST_Grab			UMETA(DisplayName = "Grab"),
 };
 
 
@@ -185,6 +186,8 @@ struct FSculptInputInfo
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Sculpting")
 	FVector LastLocation;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Sculpting")
+	FVector HandLocation;
 
 	FSculptInputInfo()
 	{
