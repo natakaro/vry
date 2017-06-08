@@ -166,9 +166,24 @@ void ATerrainSection::UpdateSection()
 void ATerrainSection::SetVisibility()
 {
 	if (!ensure(PlayerControllerReference)) { return; }
-	FVector PlayerLocation = PlayerControllerReference->GetPawn()->GetActorLocation() * FVector(1, 1, 0);
-	float DistanceX = FVector::Dist(PlayerLocation, FVector(CenterLocation.X, PlayerLocation.Y, 0));
-	float DistanceY = FVector::Dist(PlayerLocation, FVector(PlayerLocation.X, CenterLocation.Y, 0));
+	//FVector PlayerLocation = PlayerControllerReference->GetPawn()->GetActorLocation() * FVector(1, 1, 0);
+	//float DistanceX = FVector::Dist(PlayerLocation, FVector(CenterLocation.X, PlayerLocation.Y, 0));
+	//float DistanceY = FVector::Dist(PlayerLocation, FVector(PlayerLocation.X, CenterLocation.Y, 0));
+	//float DistanceToPawn = (DistanceX > DistanceY) ? DistanceX : DistanceY;
+
+	FVector CameraLocation;
+	TArray<UActorComponent*> CameraComps;
+	CameraComps = PlayerControllerReference->GetPawn()->GetComponentsByClass(UCameraComponent::StaticClass());
+	for (int i = 0; i < CameraComps.Num(); i++)
+	{
+		UCameraComponent* CameraComp = Cast<UCameraComponent>(CameraComps[i]);
+
+		CameraLocation = CameraComp->GetComponentLocation();
+	}
+
+	CameraLocation = CameraLocation * FVector(1, 1, 0);
+	float DistanceX = FVector::Dist(CameraLocation, FVector(CenterLocation.X, CameraLocation.Y, 0));
+	float DistanceY = FVector::Dist(CameraLocation, FVector(CameraLocation.X, CenterLocation.Y, 0));
 	float DistanceToPawn = (DistanceX > DistanceY) ? DistanceX : DistanceY;
 
 	//check if it should be visible
