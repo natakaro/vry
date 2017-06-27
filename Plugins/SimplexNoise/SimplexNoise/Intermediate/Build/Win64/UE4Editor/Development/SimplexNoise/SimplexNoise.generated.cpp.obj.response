@@ -22,11 +22,11 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source"
-/I "C:\Users\User\Documents\Unreal Projects\vryy\vry\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise\Private"
-/I "C:\Users\User\Documents\Unreal Projects\vryy\vry\Plugins\SimplexNoise\SimplexNoise\Source"
-/I "C:\Users\User\Documents\Unreal Projects\vryy\vry\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise\Public"
-/I "C:\Users\User\Documents\Unreal Projects\vryy\vry\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Inc\SimplexNoise"
-/I "C:\Users\User\Documents\Unreal Projects\vryy\vry\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise"
+/I "C:\Users\User\Documents\Unreal Projects\vryy\vry-teDobre\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise\Private"
+/I "C:\Users\User\Documents\Unreal Projects\vryy\vry-teDobre\Plugins\SimplexNoise\SimplexNoise\Source"
+/I "C:\Users\User\Documents\Unreal Projects\vryy\vry-teDobre\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise\Public"
+/I "C:\Users\User\Documents\Unreal Projects\vryy\vry-teDobre\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Inc\SimplexNoise"
+/I "C:\Users\User\Documents\Unreal Projects\vryy\vry-teDobre\Plugins\SimplexNoise\SimplexNoise\Source\SimplexNoise"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Async"
@@ -421,9 +421,9 @@
 /DMESHUTILITIES_API=
 /DKISMET_API=DLLIMPORT
 /DNETWORKREPLAYSTREAMING_API=
-"C:\Users\User\Documents\Unreal Projects\vryy\vry\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Inc\SimplexNoise\SimplexNoise.generated.cpp"
-/Fo"C:\Users\User\Documents\Unreal Projects\vryy\vry\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\SimplexNoise.generated.cpp.obj"
-/Fd"C:\Users\User\Documents\Unreal Projects\vryy\vry\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\SimplexNoise.generated.cpp.pdb"
+"C:\Users\User\Documents\Unreal Projects\vryy\vry-teDobre\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Inc\SimplexNoise\SimplexNoise.generated.cpp"
+/Fo"C:\Users\User\Documents\Unreal Projects\vryy\vry-teDobre\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\SimplexNoise.generated.cpp.obj"
+/Fd"C:\Users\User\Documents\Unreal Projects\vryy\vry-teDobre\Plugins\SimplexNoise\SimplexNoise\Intermediate\Build\Win64\UE4Editor\Development\SimplexNoise\SimplexNoise.generated.cpp.pdb"
 /TP
 /GR-
 /W4
